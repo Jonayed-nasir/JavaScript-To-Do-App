@@ -56,7 +56,6 @@ div.appendChild(editBtn);
 div.appendChild(delBtn);
 outputAll.appendChild(div)
 
-
 }
 
 
