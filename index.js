@@ -10,7 +10,19 @@ addBtn.addEventListener('click', (e) => {
     return;
   }
 
-//   createTodo(text);
+  createTodo(text);
   inputBox.value = '';
 });
+
+
+function createTodo(text) {
+  let div = document.createElement('div');
+div.className ='bg-white md:px-3 px-2 py-2 rounded-md mt-5 flex justify-between items-center';
+
+
+outputAll.appendChild(div)
+
+
+}
+
 
