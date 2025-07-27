@@ -26,6 +26,31 @@ input.value = text;
 input.className = 'border-0 outline-0 md:text-2xl text-md md:w-full w-60 bg-transparent';
 
 
+const editBtn = document.createElement('button');
+editBtn.textContent = '✏️';
+editBtn.className = 'text-blue-500 text-xl ml-3 cursor-pointer';
+
+editBtn.addEventListener('click', (e)=> {
+    e.preventDefault()
+    if(input.disabled) {
+        input.disabled = false;
+        input.focus();
+        input.style.borderBottom = '2px solid black'
+        editBtn.textContent = '✅';
+
+    }else {
+        input.disabled = true;
+        input.style.borderBottom = 'none'
+        editBtn.textContent = '✏️';
+    }
+})
+
+const delBtn = document.createElement('button');
+delBtn.textContent = '🗑️';
+delBtn.className = 'text-red-500 text-xl ml-3 cursor-pointer';
+delBtn.addEventListener('click', () => div.remove())
+
+
 
 outputAll.appendChild(div)
 
