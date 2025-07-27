@@ -6,7 +6,7 @@ addBtn.addEventListener('click', (e) => {
   e.preventDefault();
   const text = inputBox.value.trim();
   if (text === '') {
-    alert('inputBox');
+    alert('Please Enter a Value');
     return;
   }
 
