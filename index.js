@@ -26,6 +26,7 @@ input.value = text;
 input.className = 'border-0 outline-0 md:text-2xl text-md md:w-full w-60 bg-transparent';
 
 
+
 outputAll.appendChild(div)
 
 
