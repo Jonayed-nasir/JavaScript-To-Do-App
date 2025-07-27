@@ -51,7 +51,9 @@ delBtn.className = 'text-red-500 text-xl ml-3 cursor-pointer';
 delBtn.addEventListener('click', () => div.remove())
 
 
-
+div.appendChild(input);
+div.appendChild(editBtn);
+div.appendChild(delBtn);
 outputAll.appendChild(div)
 
 
